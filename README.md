@@ -24,7 +24,7 @@ This is a full-stack web application built using the MERN stack (MongoDB, Expres
 
 2. Navigate to the `backend` directory:
    ```bash
-   cd backend
+   cd server
    ```
 
 3. Install dependencies:
@@ -56,7 +56,7 @@ This is a full-stack web application built using the MERN stack (MongoDB, Expres
 
 1. Navigate to the `frontend` directory:
    ```bash
-   cd frontend
+   cd client
    ```
 
 2. Install dependencies:
