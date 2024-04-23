@@ -66,7 +66,7 @@ This is a full-stack web application built using the MERN stack (MongoDB, Expres
 
 3. Start the frontend development server:
    ```bash
-   npm start
+   npm run dev
    ```
 
 ### Usage
@@ -81,7 +81,3 @@ Contributions are welcome! Feel free to open issues or pull requests for any imp
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
-
----
-
-Feel free to customize the README.md file further to include any additional information or instructions specific to your project.
