@@ -5,9 +5,6 @@ const router = express.Router();
 
 
 
-
-
-
 //route for save a new book
 router.post("/", async (req, res) => {
     try {
@@ -83,10 +80,10 @@ router.post("/", async (req, res) => {
         const result = await Book.findByIdAndUpdate(id, req.body);
     
         if (!result) {
-          return res.status(404).json({ message: "Book not Found" }); // Corrected spelling
+          return res.status(404).json({ message: "Book not Found" }); // books can't find
         }
     
-        return res.status(200).send({ message: "Book updated Successfully!" }); // Corrected message
+        return res.status(200).send({ message: "Book updated Successfully!" }); // Success message
       } catch (err) {
         console.log(err.message);
         res.status(500).send({ message: err.message });
@@ -109,7 +106,7 @@ router.post("/", async (req, res) => {
           
       }catch(err){
           console.log(err.message);
-          res.status(500).send({message:error.message});
+          res.status(500).send({message:err.message});
       }
   });
 
